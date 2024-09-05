@@ -32,6 +32,9 @@
 * [ ] Списки / Последовательности
 * [ ] Библиотечные функции: списки/последовательности
 
+А также: 
+ - ```sigillum <expr>;```
+   (выводит объект на экран)
 ## Основные типы данных
 
  - IntVal (целые числа)
@@ -52,29 +55,52 @@
 
 Пример: 
 
-```1 additamentum 2``` (сложение)
+```
+1 additamentum 2
+``` 
+(сложение)
 
-```3 multiplicatio 4 ```(умножение)
+```
+3 multiplicatio 4
+```
+(умножение)
 ### Условные выражения
 
-Пример: 
+Примеры: 
 
-```si x plus_quam 2 deinde y aliter z```
+```
+si 1  pares 1
+deinde  sigillum 3
+aliter sigillum 4
+;
+```
+
+```
+si x plus_quam 2 deinde y aliter z
+```
+
+
 ### Функции
 
 Пример: 
 
-```munus x -> x additamentum 1```
+```
+munus x -> x additamentum 1
+```
 ### Объявление переменных
 
 Пример: 
 
-```sit x assign 3 in x additamentum 1```.
+```
+sit x assign 3 in x additamentum 1
+```
 ### Функциональное применение
 
 Пример: 
 
-```f(1, 2)```
+```
+f(1, 2)
+```
 
 
 ## Описание интерпретатора
